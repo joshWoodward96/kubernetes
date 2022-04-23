@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metedata:
+  name: diseasecontrol-pod
+  labels:
+    name: diseasecontrol-pod
+    app: app
+
+spec:
+  containers:
+    - name: diseasecontrol
+      image: 14066910/repo:1.0
+      ports:
+        - containerPort: 8000
